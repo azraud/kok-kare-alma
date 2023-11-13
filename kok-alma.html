@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAREKÖK-KARE HESAPLA</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .input-group {
+        width: 450px;
+      }
+      .container {
+        width: 50%;
+        margin: auto;
+      }
+      input::-webkit-outer-spin-button, 
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+    </style>
+  </head>
+  <body class="m-auto">
+    <div class="container mt-4">
+      <h1 class="w-75 font-weight-bold">Karekök veya Kare Alma</h1>
+      <br />
+      <h3 class="font-weight-bold">Sayı Giriniz</h3>
+      <div class="input-group">
+        <input type="number" id="kare" class="form-control" />
+        <div class="input-group-append">
+          <button
+            class="btn btn-success text-center font-weight-bold"
+            id="hesapla"
+            onclick="sonuc()"
+          >
+            Sonuç
+          </button>
+        </div>
+      </div>
+      <label for="kare" class="h4 mt-3 font-weight-bold">Sonuçlar</label>
+      <ul id="sonuclar" class="list-group w-50"></ul>
+    </div>
+
+    <script src="kok-alma.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
